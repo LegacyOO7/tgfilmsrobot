@@ -83,7 +83,7 @@ USAGE_MESSAGE = """
 
 
 × 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 𝙳𝙴𝙿𝙻𝙾𝚈𝙴𝙳 𝙱𝚈
-  -@TGFilmsUpdates
+  -@TGFilmsUpdates """
 
 
 
