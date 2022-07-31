@@ -25,7 +25,7 @@ PICS = os.environ.get("PICS", "")
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "LuciferMoringstar-Robot")
 DATABASE_URI = os.environ.get("DATABASE_URI", "")
 # Chats & Users
-ADMINS = os.environ.get("ADMINS", "2028425293 1637186875")
+ADMINS = os.environ.get("ADMINS", "")
 SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "TgFilmsupdates")
 AUTH_CHANNEL = os.environ.get("AUTH_CHANNEL", "")
 CHANNELS = [int(ch) if search.search(ch) else ch for ch in os.environ.get("CHANNELS", "").split()]
