@@ -306,28 +306,12 @@ async def cb_handler(bot, update):
         elif update.data == "start":
             buttons = [[ InlineKeyboardButton("× 𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 ×", url="https://t.me/TGFilmsupdates/120") ],
                       [ InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 💬", url=f"t.me/{SUPPORT}"), InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="t.me/TgFilmsupdates") ],
-                      [ InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
+                      [ InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿", callback_data="help"), InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
             await update.message.edit(START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons))
 
         elif update.data == "help":
             try:
                 buttons = [[
-                 InlineKeyboardButton("AutoFilter", callback_data="autofilter"),
-                 InlineKeyboardButton("FileStore", callback_data="filestore"),
-                 InlineKeyboardButton("Misc", callback_data="misc")
-                 ],[
-                 InlineKeyboardButton("Connections", callback_data="connection"),
-                 InlineKeyboardButton("SpellCheck", callback_data="spellcheck"),
-                 InlineKeyboardButton("Via", callback_data="inlinecb")
-                 ],[
-                 InlineKeyboardButton("Welcome", callback_data="welcome"),
-                 InlineKeyboardButton("Caption", callback_data="filecaption"),
-                 InlineKeyboardButton("Fun", callback_data="funcb")
-                 ],[
-                 InlineKeyboardButton("Font", callback_data="fontcb"),
-                 InlineKeyboardButton("ShareText", callback_data="sharetextcb"),
-                 InlineKeyboardButton("TTs", callback_data="ttscb")
-                 ],[
                  InlineKeyboardButton("Status", callback_data="status"),
                  InlineKeyboardButton("Home", callback_data="start")
                  ]]                     
