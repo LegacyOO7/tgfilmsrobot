@@ -82,7 +82,7 @@ async def start(bot: lucifermoringstar_robot, update):
     if len(update.command) != 2:
         pr0fess0r_99 = [[ InlineKeyboardButton("× 𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 ×", url="https://t.me/TGFilmsupdates/120") ],
                         [ InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 💬", url=f"t.me/{SUPPORT}"), InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="t.me/TgFilmsupdates") ],
-                        [ InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
+                        [ InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿", callback_data="help"), InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
         await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
 
 @lucifermoringstar_robot.on_message(filters.command(["admin", "admins"]) & filters.user(ADMINS) & filters.private, group=2)
